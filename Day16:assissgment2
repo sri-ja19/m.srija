@@ -1,0 +1,42 @@
+/*Write a c program to print all those numbers from 1 upto n which are divisible by k and also print evensum and oddsum from those divisible*/
+PROGRAM-
+#include<stdio.h>
+int main()
+{
+    int num, i, evensum = 0, oddsum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Numbers divisible by %d:\n", num);
+    for(i = 1; i <= 20; i++)
+    {
+        if(i % num == 0) 
+        {
+            printf("%d\n", i);
+            if(i % 2 == 0)
+            {
+                evensum += i;
+            }
+            else
+            {
+                oddsum += i;
+            }
+        }
+    }
+    printf("evensum=%d\n", evensum);
+    printf("oddsum=%d\n", oddsum);
+    return 0;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
